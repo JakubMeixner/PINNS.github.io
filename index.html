@@ -1,105 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lorem Ipsum - Placeholder text generator">
-  <title>Lorem Ipsum Generator</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #ffffff; /* White background */
-      color: #333; /* Dark gray text */
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      padding: 20px 0;
-      background: #007BFF; /* Blue background */
-      color: white;
-    }
-    section {
-      max-width: 800px;
-      margin: 20px auto;
-    }
-    .columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .column {
-      flex: 1;
-      min-width: 300px; /* Ensures columns stack on smaller screens */
-    }
-    .video-container {
-      text-align: center;
-      margin: 40px 0;
-    }
-    video {
-      max-width: 100%;
-      height: auto;
-      border: 2px solid #ccc;
-    }
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background: #f8f9fa;
-      color: #555;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerfies: Deformable Neural Radiance Fields</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #222;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Lorem Ipsum Placeholder Text Generator</h1>
-  </header>
-  <section>
-    <h2>What is Lorem Ipsum?</h2>
-    <div class="columns">
-      <div class="column">
+    <div class="container">
+        <h1>Nerfies: Deformable Neural Radiance Fields</h1>
+        <h2>Authors</h2>
+        <p>Matthew Tancik, Vincent Casser, Xinchen Yan, Sabeek Pradhan, Ben Mildenhall, Pratul P. Srinivasan, Jonathan T. Barron, Henrik Kretzschmar</p>
+
+        <h2>Abstract</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
-          make a type specimen book.
+            Nerfies is a method for modeling dynamic 3D scenes using neural radiance fields. It can handle complex deformations and captures high-quality details for rendering.
         </p>
-      </div>
-      <div class="column">
-        <p>
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
-          unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-          and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
+
+        <h2>Video Demonstration</h2>
+        <video controls>
+            <source src="corruption_init.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Images</h2>
+        <img src="nerfies_image1.jpg" alt="Example rendering from Nerfies">
+
+        <h2>Code and Data</h2>
+        <ul>
+            <li><a href="https://github.com/example/nerfies">Code Repository</a></li>
+            <li><a href="https://example.com/dataset">Dataset</a></li>
+        </ul>
+
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://nerfies.example.com">Project Page</a></li>
+            <li><a href="https://example.com/paper">Paper</a></li>
+        </ul>
     </div>
-    <div class="video-container">
-      <h2>Interactive Video</h2>
-      <video controls>
-        <source src="assets/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <h2>Why use Lorem Ipsum?</h2>
-    <div class="columns">
-      <div class="column">
-        <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking 
-          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as 
-          opposed to using 'Content here, content here', making it look like readable English.
-        </p>
-      </div>
-      <div class="column">
-        <p>
-          Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a 
-          search for 'lorem ipsum' will uncover many web sites still in their infancy.
-        </p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <p>&copy; 2025 Lorem Ipsum Generator | Created by Jakub Meixner</p>
-  </footer>
 </body>
 </html>
 
